@@ -11,8 +11,6 @@ public class Shipment {
     @Id
     @Column(name = "shipment_id")
     private Integer shipmentId;
-    @Column(name = "batch_no")
-    private String batchNo;
     @Column(name = "shipment_date")
     private LocalDate date;
     @Column(name = "quantity_tons")
@@ -29,7 +27,6 @@ public class Shipment {
     }
     public Shipment(Integer shipmentId, String batchNo, LocalDate date, BigDecimal qty, String status, CropBatch cropBatch, Buyer buyer) {
         this.shipmentId = shipmentId;
-        this.batchNo = batchNo;
         this.date = date;
         this.qty = qty;
         this.status = status;
@@ -41,12 +38,6 @@ public class Shipment {
     }
     public void setShipmentId(Integer shipmentId) {
         this.shipmentId = shipmentId;
-    }
-    public String getBatchNo() {
-        return batchNo;
-    }
-    public void setBatchNo(String batchNo) {
-        this.batchNo = batchNo;
     }
     public LocalDate getDate() {
         return date;
