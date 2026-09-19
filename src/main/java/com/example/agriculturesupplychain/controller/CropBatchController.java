@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/cropBatch")
 public class CropBatchController {
     private final CropBatchService cropBatchService;
     public CropBatchController(CropBatchService cropBatchService){

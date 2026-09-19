@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/api/buyer")
-public class BuyerFieldController {
+@RestController
+@RequestMapping("/api/buyer")
+public class BuyerController {
     private final BuyerService buyerService;
-    public BuyerFieldController(BuyerService buyerService){
+    public BuyerController(BuyerService buyerService){
         this.buyerService = buyerService;
     }
     @PostMapping
