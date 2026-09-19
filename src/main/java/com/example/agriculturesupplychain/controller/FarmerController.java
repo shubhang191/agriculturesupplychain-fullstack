@@ -1,0 +1,7 @@
+package com.example.agriculturesupplychain.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class FarmerController {
+}
