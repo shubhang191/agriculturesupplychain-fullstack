@@ -32,7 +32,7 @@ public class ShipmentController {
     public ResponseEntity<Shipment> update(@PathVariable("shipmentId") Integer id, @RequestBody ShipmentRequest shipmentRequest){
         return ResponseEntity.ok(shipmentService.updateShipment(id, shipmentRequest));
     }
-    @DeleteMapping("/{shipmentId")
+    @DeleteMapping("/{shipmentId}")
     public ResponseEntity<Void> delete(@PathVariable("shipmentId") Integer id){
         shipmentService.deleteShipment(id);
         return ResponseEntity.noContent().build();
