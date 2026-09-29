@@ -72,7 +72,7 @@ cd Backend
 
 ```
 
-> The API server will start on `http://localhost:8080`.
+> The API server will start on `http://localhost:8083`.
 
 ### 2. Frontend Setup (React + Vite)
 
@@ -88,7 +88,7 @@ npm run dev
 
 ```
 
-> The web interface will run on `http://localhost:5173`.
+> The web interface will run on `http://localhost:3000`.
 
 ## 🔗 API Architecture
 
