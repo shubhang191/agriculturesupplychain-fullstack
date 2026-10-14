@@ -10,6 +10,7 @@ import { BatchesView } from './pages/BatchesView';
 import { StorageView } from './pages/StorageView';
 import { ShipmentsView } from './pages/ShipmentsView';
 import { BuyersView } from './pages/BuyersView';
+import { ReportsView } from './pages/ReportsView';
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
+          <Route path="reports" element={<ReportsView />} />
           <Route path="fields" element={<FieldsView />} />
           <Route path="farmers" element={<FarmersView />} />
           <Route path="suppliers" element={<SuppliersView />} />

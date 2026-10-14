@@ -10,12 +10,14 @@ import {
   Warehouse, 
   Send, 
   ShoppingBag,
-  ShieldCheck
+  ShieldCheck,
+  FileText
 } from 'lucide-react';
 
 export const Sidebar = ({ isOpen, onClose }) => {
   const navItems = [
     { to: '/', label: 'Dashboard', icon: LayoutDashboard },
+    { to: '/reports', label: 'Join Reports', icon: FileText },
     { to: '/fields', label: 'Agricultural Fields', icon: Sprout },
     { to: '/farmers', label: 'Farmers', icon: Users },
     { to: '/suppliers', label: 'Suppliers', icon: Truck },
@@ -25,6 +27,7 @@ export const Sidebar = ({ isOpen, onClose }) => {
     { to: '/shipments', label: 'Shipments', icon: Send },
     { to: '/buyers', label: 'Buyers', icon: ShoppingBag },
   ];
+
 
   return (
     <>
