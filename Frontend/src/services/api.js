@@ -101,4 +101,19 @@ export const supplierApi = {
   delete: (id) => api.delete(`/supplier/${id}`).then((res) => res.data),
 };
 
+// 9. Reports API (Join & Aggregate queries)
+export const reportsApi = {
+  getShipmentDetails: () => api.get('/reports/shipment-details').then((res) => res.data),
+  getFarmerNetwork: () => api.get('/reports/farmer-network').then((res) => res.data),
+  getBatchStorage: () => api.get('/reports/batch-storage').then((res) => res.data),
+  getBuyerShipments: () => api.get('/reports/buyer-shipments').then((res) => res.data),
+  getBuyerTonnage: () => api.get('/reports/buyer-tonnage').then((res) => res.data),
+};
+
+// 10. Global Search API
+export const searchApi = {
+  search: (q, config = {}) => api.get('/search', { params: { q }, ...config }).then((res) => res.data),
+};
+
 export default api;
+
